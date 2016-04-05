@@ -5,7 +5,7 @@ import time
 #remember time somehow, files?
 
 # Your OpenWeatherMap Api Key
-APPID = "aab0e21de127f26fd689163ee765fe5a";
+APPID = "";
 CITY = sys.argv[1]
 UNITS = "metric" # metric, imperial
 
