@@ -1,12 +1,11 @@
+# Python 3 only?
 import requests
 import json
 import sys
 import datetime
 
-#remember weather for 24 hrs somewhow TODO
-
 # Your OpenWeatherMap Api Key
-APPID = "";
+APPID = "aab0e21de127f26fd689163ee765fe5a";
 CITY = sys.argv[1]
 UNITS = "metric" # metric, imperial
 
@@ -28,11 +27,10 @@ def print_weather():
 
     print(weather["name"], ", ", weather["sys"]["country"])
     print("\n")
-    print("Low: ", weather["main"]["temp_min"], " ºC")
-    print("High: ", weather["main"]["temp_max"], " ºC")
-    print("Clouds: ", weather["clouds"]["all"])
+    print("Temperature: ", weather["main"]["temp_min"], " C")
     print("\n")
     print("Sunrise at: ",  sunrise)
+    print("\n")
     print("Sunset at: ", sunset)
 
 
